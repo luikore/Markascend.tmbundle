@@ -16,8 +16,10 @@
 		<string>^h[1-6](#\w+)?\ </string>
 		<key>increaseIndentPattern</key>
 		<string>(?x)
-	  ^\|\ *\w*$
-	  | \\\w+</string>
+	  ^ \ *\|\ *\w* $      # code block
+	  |
+	  \\ \w+ ([^\(\{\w]|$) # macro but not inline
+	</string>
 		<key>softWrap</key>
 		<true/>
 		<key>tabSize</key>
