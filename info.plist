@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string></string>
+	<key>contactName</key>
+	<string>luikore</string>
+	<key>description</key>
+	<string>Markascend syntax hilite and utilities
+
+https://github.com/luikore/markascend
+https://github.com/luikore/Markascend.tmbundle
+</string>
+	<key>name</key>
+	<string>Markascend</string>
+	<key>uuid</key>
+	<string>68BAB5DD-0171-46ED-9CBC-C0961C204614</string>
+</dict>
+</plist>

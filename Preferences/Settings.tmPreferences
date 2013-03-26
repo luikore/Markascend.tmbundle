@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Settings</string>
+	<key>scope</key>
+	<string>text.markascend</string>
+	<key>settings</key>
+	<dict>
+		<key>disableIndentCorrections</key>
+		<true/>
+		<key>foldingIndentedBlockIgnore</key>
+		<string>^(?!h[1-6](#\w+)?\ )</string>
+		<key>foldingIndentedBlockStart</key>
+		<string>^h[1-6](#\w+)?\ </string>
+		<key>increaseIndentPattern</key>
+		<string>(?x)
+	  ^\|\ *\w*$
+	  | \\\w+</string>
+		<key>softWrap</key>
+		<true/>
+		<key>tabSize</key>
+		<integer>2</integer>
+	</dict>
+	<key>uuid</key>
+	<string>0A8BFD18-06C4-4A7E-967D-550B6715E1F6</string>
+</dict>
+</plist>
