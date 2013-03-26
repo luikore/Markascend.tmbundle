@@ -59,6 +59,21 @@
 			<key>name</key>
 			<string>markup.italic.markascend</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)
+				\\(?!\d)\w+ # name
+				(?:
+					\(
+						(?: \\ [\\\)] | [^\)] )+ # content with lexical rule
+					\)
+					|
+					{ .*? } # content with recursive rule
+				)
+			</string>
+			<key>name</key>
+			<string>markup.raw.macro.markascend</string>
+		</dict>
 	</array>
 	<key>scopeName</key>
 	<string>text.markascend</string>
