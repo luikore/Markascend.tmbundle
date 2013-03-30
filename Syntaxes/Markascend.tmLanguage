@@ -37,7 +37,11 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\`(?:\\\\|\\\`|[^`])*\`</string>
+			<string>(?x)
+				(`{1,})(\ ?)
+				.*?
+				\2\1
+			</string>
 			<key>name</key>
 			<string>markup.raw.inline.markascend</string>
 		</dict>
