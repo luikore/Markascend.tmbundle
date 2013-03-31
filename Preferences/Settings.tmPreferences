@@ -11,9 +11,9 @@
 		<key>disableIndentCorrections</key>
 		<true/>
 		<key>foldingIndentedBlockIgnore</key>
-		<string>^(?!h[1-6](#\w+)?\ )</string>
+		<string>^(?!h[1-6](\#\w+(\-\w+)*)?\ )</string>
 		<key>foldingIndentedBlockStart</key>
-		<string>^h[1-6](#\w+)?\ </string>
+		<string>^h[1-6](\#\w+(\-\w+)*)?\ </string>
 		<key>increaseIndentPattern</key>
 		<string>(?x)
 	  ^ \ *\|\ *\w* $      # code block
