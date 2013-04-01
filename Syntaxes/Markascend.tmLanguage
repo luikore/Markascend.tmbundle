@@ -37,13 +37,43 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?x)
+			<string>(?x) # inline code
 				(`{1,})(\ ?)
 				.*?
 				\2\1
 			</string>
 			<key>name</key>
 			<string>markup.raw.inline.markascend</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>string.link.markascend</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>markup.underline.link.markascend</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?x) # link
+				(\[.+?\])
+				(?:
+					\(
+					((?:\\ [\\\)] | [^\)])+)  # lexical rule
+					\)
+				|
+					\{
+					(.+?)  # mostly recursive rule
+					\}
+				)?
+			</string>
+			<key>name</key>
+			<string>string.quoted.double.markascend</string>
 		</dict>
 		<dict>
 			<key>match</key>
